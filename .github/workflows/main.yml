@@ -9,12 +9,25 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
-    - name: Pushes blocks, components folders
+    - name: Pushes blocks folder
       uses: datalbry/copy_folder_to_another_repo_action@1.0.0
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
-        source_folder: 'blocks, components'
+        source_folder: 'blocks'
+        destination_repo: 'joelcorey/website-bigtrashpanda.com'
+        # destination_branch: 'main'
+        destination_branch: 'next-14-and-website-refactor'
+        user_email: 'hello@joelcorey.com'
+        user_name: 'joelcorey'
+        commit_msg: '[GHA] Update the blocks and components from payload to the frontend.'
+
+    - name: Pushes components folder
+      uses: datalbry/copy_folder_to_another_repo_action@1.0.0
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source_folder: 'components'
         destination_repo: 'joelcorey/website-bigtrashpanda.com'
         # destination_branch: 'main'
         destination_branch: 'next-14-and-website-refactor'
