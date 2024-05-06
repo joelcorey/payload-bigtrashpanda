@@ -70,7 +70,7 @@ const review = (reviewNumber) => {
 			{reviewStars(5)}
 		</div>
 		<div className="mt-4">
-			<p className="text-sm leading-relaxed">{reviews[reviewNumber].text} yeaha</p>
+			<p className="text-sm leading-relaxed">{reviews[reviewNumber].text} yeAAAaha</p>
 			<h4 className="text-base whitespace-nowrap font-extrabold mt-4">{reviews[reviewNumber].name}</h4>
 			{/* <p className="mt-1 text-xs text-gray-400">Founder of Labar</p> */}
 		</div>
