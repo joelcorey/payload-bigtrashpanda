@@ -10,32 +10,33 @@ const Media: CollectionConfig = {
 		read: () => true
 	},
   admin: {
-    useAsTitle: 'alt',
-    defaultColumns: [
-      'id',
-      'alt'
-    ],
-    group: 'Icons'
+    // useAsTitle: 'alt',
+    // defaultColumns: [
+    //   'id',
+    //   'alt'
+    // ],
+    // group: 'Icons'
   },
-  upload: {
-    disableLocalStorage: true,
-    // Specify the size name that you'd like to use as admin thumbnail
-    adminThumbnail: 'thumbnail',
-    imageSizes: [
-      {
-        height: 300,
-        width: 400,
-        crop: 'center',
-        name: 'thumbnail', 
-      },
-      {
-        width: 900,
-        height: 450,
-        crop: 'center',
-        name: 'sixteenByNineMedium',
-      },
-    ],
-  },
+  // upload: {
+  //   disableLocalStorage: true,
+  //   // Specify the size name that you'd like to use as admin thumbnail
+  //   adminThumbnail: 'thumbnail',
+  //   imageSizes: [
+  //     {
+  //       height: 300,
+  //       width: 400,
+  //       crop: 'center',
+  //       name: 'thumbnail', 
+  //     },
+  //     {
+  //       width: 900,
+  //       height: 450,
+  //       crop: 'center',
+  //       name: 'sixteenByNineMedium',
+  //     },
+  //   ],
+  // },
+	upload: true,
   fields: [
     {
       name: 'alt',
