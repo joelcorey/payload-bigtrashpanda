@@ -3,7 +3,7 @@ name: Push Blocks and Components
 on: push
 
 jobs:
-  copy-file:
+  copy-folder-blocks:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,7 +21,12 @@ jobs:
           destination_branch: 'next-14-and-website-refactor'
           user_email: 'hello@joelcorey.com'
           user_name: 'joelcorey'
-          commit_msg: '[GHA] Update the blocks and components from payload to the frontend.'
+          commit_msg: '[GHA] Update the blocks from payload to the frontend.'
+  copy-folder-components:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Pushes components folder
         uses: datalbry/copy_folder_to_another_repo_action@1.0.0
@@ -35,4 +40,5 @@ jobs:
           destination_branch: 'next-14-and-website-refactor'
           user_email: 'hello@joelcorey.com'
           user_name: 'joelcorey'
-          commit_msg: '[GHA] Update the blocks and components from payload to the frontend.'
+          commit_msg: '[GHA] Update the components from payload to the frontend.'
+				
