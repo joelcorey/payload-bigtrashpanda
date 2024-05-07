@@ -41,4 +41,3 @@ jobs:
           user_email: 'hello@joelcorey.com'
           user_name: 'joelcorey'
           commit_msg: '[GHA] Update the components from payload to the frontend.'
-				
