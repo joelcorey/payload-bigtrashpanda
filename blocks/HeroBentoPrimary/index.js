@@ -10,6 +10,8 @@ const borders = (showBorders) => {
 	return showBorders ? 'border border-1 border-black' : ''
 }
 
+// testing github actions
+
 let slides = [
 	'/img/component/carousel/carousel-1.svg',
 	'/img/component/carousel/carousel-2.svg',
