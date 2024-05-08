@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import ImageSlider from "../../components/ImageSlider"
+import ImageSlider from "../../ImageSlider"
 
 let slides = [
 	{

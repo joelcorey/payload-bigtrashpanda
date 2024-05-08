@@ -1,27 +1,27 @@
-name: Push Blocks and Components
+name: Push components #and blocks
 
 on: push
 
 jobs:
-  copy-folder-blocks:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+  # copy-folder-blocks:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
 
-      - name: Pushes blocks folder
-        uses: datalbry/copy_folder_to_another_repo_action@1.0.0
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-        with:
-          source_folder: 'blocks'
-          destination_repo: 'joelcorey/website-bigtrashpanda.com'
-          destination_folder: 'blocks'
-          # destination_branch: 'main'
-          destination_branch: 'next-14-and-website-refactor'
-          user_email: 'hello@joelcorey.com'
-          user_name: 'joelcorey'
-          commit_msg: '[GHA] Update the blocks from payload to the frontend.'
+  #     - name: Pushes blocks folder
+  #       uses: datalbry/copy_folder_to_another_repo_action@1.0.0
+  #       env:
+  #         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+  #       with:
+  #         source_folder: 'blocks'
+  #         destination_repo: 'joelcorey/website-bigtrashpanda.com'
+  #         destination_folder: 'blocks'
+  #         # destination_branch: 'main'
+  #         destination_branch: 'next-14-and-website-refactor'
+  #         user_email: 'hello@joelcorey.com'
+  #         user_name: 'joelcorey'
+  #         commit_msg: '[GHA] Update the blocks from payload to the frontend.'
   copy-folder-components:
     runs-on: ubuntu-latest
     steps:
