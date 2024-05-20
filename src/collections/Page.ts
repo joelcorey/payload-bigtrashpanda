@@ -7,7 +7,7 @@ import slug from '../fields/slug';
 import Content from 'blocks/Content';
 import Spacer from 'blocks/Spacer';
 
-const Page = {
+const Page: CollectionConfig = {
   slug: 'pages',
 	labels: {
 		singular: 'Page',
