@@ -1,4 +1,6 @@
-const HeroBentoPrimary = {
+import { Block } from 'payload/types';
+
+const HeroBentoPrimary: Block = {
 	slug: 'heroBentoPrimary',
 	labels: {
 		singular: 'Hero Bento Primary Block',
