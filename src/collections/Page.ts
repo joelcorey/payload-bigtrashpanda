@@ -3,9 +3,9 @@ import type { CollectionConfig } from 'payload/types';
 import meta from '../fields/meta';
 import slug from '../fields/slug';
 
-import HeroBentoPrimary from 'blocks/HeroBentoPrimary';
-import Content from 'blocks/Content';
-import Spacer from 'blocks/Spacer';
+import HeroBentoPrimary from '@/blocks/HeroBentoPrimary';
+import Content from '@/blocks/Content';
+import Spacer from '@/blocks/Spacer';
 
 const Page: CollectionConfig = {
   slug: 'pages',
