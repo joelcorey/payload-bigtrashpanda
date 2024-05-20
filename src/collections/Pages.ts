@@ -3,11 +3,11 @@ import type { CollectionConfig } from 'payload/types';
 import meta from '../fields/meta';
 import slug from '../fields/slug';
 
-// import { Content } from '../blocks/Content';
-// import { Hero } from '../blocks/Hero';
-// import { Image } from '../blocks/Image';
+import HeroBentoPrimary from 'blocks/HeroBentoPrimary';
+import Content from 'blocks/Content';
+import Spacer from 'blocks/Spacer';
 
-const Pages: CollectionConfig = {
+const Page = {
   slug: 'pages',
 	labels: {
 		singular: 'Page',
@@ -32,9 +32,9 @@ const Pages: CollectionConfig = {
 			type: 'blocks',
 			minRows: 1,
 			blocks: [
-				// Hero,
-				// Content,
-				// Image
+				HeroBentoPrimary,
+				Content,
+				Spacer
 			]
 		},
 		meta,
@@ -43,4 +43,4 @@ const Pages: CollectionConfig = {
   
 };
 
-export default Pages;
+export default Page;
