@@ -1,4 +1,4 @@
-export const HeroBentoPrimary = {
+const HeroBentoPrimary = {
 	slug: 'heroBentoPrimary',
 	labels: {
 		singular: 'Hero Bento Primary Block',
@@ -92,3 +92,5 @@ export const HeroBentoPrimary = {
 		}
 	]
 }
+
+export default HeroBentoPrimary;
