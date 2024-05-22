@@ -33,23 +33,23 @@ importers:
         specifier: 3.0.0-beta.35
         version: 3.0.0-beta.35(@swc/core@1.5.7(@swc/helpers@0.5.11))(@swc/types@0.1.7)(graphql@16.8.1)(typescript@5.4.5)
       react:
-        specifier: ^18.3.1
+        specifier: ^18
         version: 18.3.1
       react-dom:
-        specifier: ^18.3.1
+        specifier: ^18
         version: 18.3.1(react@18.3.1)
       sharp:
         specifier: 0.32.6
         version: 0.32.6
     devDependencies:
       '@types/node':
-        specifier: ^20.11.25
+        specifier: ^20
         version: 20.12.12
       '@types/react':
-        specifier: ^18.2.64
+        specifier: ^18
         version: 18.3.2
       '@types/react-dom':
-        specifier: ^18.2.21
+        specifier: ^18
         version: 18.3.0
       dotenv:
         specifier: ^16.4.5
