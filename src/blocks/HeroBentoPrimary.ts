@@ -1,5 +1,7 @@
 import { Block } from 'payload/types';
 
+import icon from '@/fields/icon';
+
 import { Type as MediaType } from '../collections/Media';
 
 export type Type = {
@@ -82,10 +84,7 @@ const HeroBentoPrimary: Block = {
 					label: 'Title',
 					type: 'text',
 				},
-				{
-					name: 'icon',
-					type: 'text',
-				},
+				icon,
 				{
 					name: 'header',
 					label: 'Header',
