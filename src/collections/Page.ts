@@ -3,9 +3,23 @@ import type { CollectionConfig } from 'payload/types';
 import meta from '../fields/meta';
 import slug from '../fields/slug';
 
-import HeroBentoPrimary from '@/blocks/HeroBentoPrimary';
-import Content from '@/blocks/Content';
-import Spacer from '@/blocks/Spacer';
+import HeroBentoPrimary, { Type as HeroBentoPrimaryType } from '@/blocks/HeroBentoPrimary';
+import Content,          { Type as ContentType } from '@/blocks/Content';
+import Spacer,           { Type as SpacerType } from '@/blocks/Spacer';
+
+export type Layout =
+	HeroBentoPrimaryType
+  | ContentType
+  | SpacerType
+
+export type Type = {
+  title: string
+
+  slug: string
+  layout: Layout[]
+  meta: MetaType
+}
+
 
 const Page: CollectionConfig = {
   slug: 'pages',

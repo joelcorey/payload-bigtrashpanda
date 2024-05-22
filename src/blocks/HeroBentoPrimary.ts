@@ -1,5 +1,17 @@
 import { Block } from 'payload/types';
 
+import { Type as MediaType } from '../collections/Media';
+
+export type Type = {
+  blockType: 'heroBentoPrimary'
+  blockName?: string
+  heading: string
+  subHeading: string
+  backgroundImage: MediaType
+
+}
+
+
 const HeroBentoPrimary: Block = {
 	slug: 'heroBentoPrimary',
 	labels: {

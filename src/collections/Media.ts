@@ -1,5 +1,22 @@
 import type { CollectionConfig } from 'payload/types';
 
+export type Type = {
+  filename: string
+  alt: string
+  sizes: {
+    card?: {
+      filename: string
+      width: number
+      height: number
+    }
+    feature?: {
+      filename: string
+      width: number
+      height: number
+    }
+  }
+}
+
 const Media: CollectionConfig = {
   slug: 'media',
 	labels: {
