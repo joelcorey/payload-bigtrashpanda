@@ -16,6 +16,8 @@ import Page from './collections/Page';
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
+const tokenString = process.env.BLOB_READ_WRITE_TOKEN
+
 export default buildConfig({
   admin: {
     user: Users.slug,
@@ -44,7 +46,7 @@ export default buildConfig({
         [Media.slug]: true,
       },
       // Token provided by Vercel once Blob storage is added to your Vercel project
-      token: process.env.BLOB_READ_WRITE_TOKEN,
+      token: tokenString!
     }),
   ],
 
