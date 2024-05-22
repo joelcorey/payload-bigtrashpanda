@@ -5,6 +5,7 @@ import path from 'path'
 import { buildConfig } from 'payload/config'
 
 import { vercelBlobStorage } from '@payloadcms/storage-vercel-blob'
+import sharp from 'sharp'
 
 // import sharp from 'sharp'
 import { fileURLToPath } from 'url'
@@ -57,5 +58,5 @@ export default buildConfig({
   // This is temporary - we may make an adapter pattern
   // for this before reaching 3.0 stable
 
-  // sharp,
+  sharp,
 })
