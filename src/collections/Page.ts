@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload/types';
 
-import meta from '../fields/meta';
+import meta, { Type as MetaType } from '../fields/meta';
 import slug from '../fields/slug';
 
 import HeroBentoPrimary, { Type as HeroBentoPrimaryType } from '@/blocks/HeroBentoPrimary';

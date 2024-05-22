@@ -11,7 +11,6 @@ export type Type = {
 
 }
 
-
 const HeroBentoPrimary: Block = {
 	slug: 'heroBentoPrimary',
 	labels: {
