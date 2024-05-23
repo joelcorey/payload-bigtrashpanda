@@ -21,8 +21,8 @@
     "cross-env": "^7.0.3",
     "next": "14.3.0-canary.78",
     "payload": "3.0.0-beta.22",
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "^19",
+    "react-dom": "^19",
     "sharp": "0.32.6"
   },
   "devDependencies": {
