@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "lib": [
       "dom",
       "dom.iterable",
@@ -29,8 +28,7 @@
       "@payload-config": [
         "./src/payload.config.ts"
       ]
-    },
-    "target": "ES2017"
+    }
   },
   "include": [
     "next-env.d.ts",
