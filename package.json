@@ -15,11 +15,8 @@
   "dependencies": {
     "@payloadcms/db-postgres": "3.0.0-beta.40",
     "@payloadcms/next": "3.0.0-beta.40",
-    "@payloadcms/plugin-cloud-storage": "3.0.0-beta.40",
     "@payloadcms/richtext-lexical": "3.0.0-beta.40",
-    "@payloadcms/storage-vercel-blob": "3.0.0-beta.40",
-    "@vercel/blob": "^0.22.3",
-    "aws-crt": "^1.21.2",
+    "@payloadcms/storage-s3": "3.0.0-beta.29",
     "cross-env": "^7.0.3",
     "next": "15.0.0-rc.0",
     "payload": "3.0.0-beta.40",
