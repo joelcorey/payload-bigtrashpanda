@@ -11,6 +11,7 @@ import { Users } from './collections/Users'
 import { Media } from './collections/Media'
 import Page from './collections/Page';
 import Category from './collections/Category';
+import Color from './collections/Color'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -24,6 +25,7 @@ export default buildConfig({
 		Media,
 		Page,
 		Category,
+		Color,
 	],
   editor: lexicalEditor({}),
   secret: process.env.PAYLOAD_SECRET || '',
