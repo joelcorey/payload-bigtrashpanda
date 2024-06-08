@@ -1,4 +1,5 @@
 import { CollectionConfig } from 'payload/types'
+import { text } from 'payload/fields/validations'
 
 import slug from '../fields/slug'
 
@@ -12,11 +13,10 @@ const Color: CollectionConfig = {
       required: true,
     },
 		{
-      name: 'htmlColorCode',
-			label: 'HTML Color Code',
-      type: 'text',
-      required: true,
-    },
+			name: 'color',
+			type: 'text',
+			required: true,
+		},
     slug
   ],
 }

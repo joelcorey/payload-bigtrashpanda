@@ -32,8 +32,14 @@ export default buildConfig({
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },
-  db: mongooseAdapter({
-    url: process.env.MONGODB_URI || '',
+  // db: mongooseAdapter({
+  //   url: process.env.MONGODB_URI || '',
+  // }),
+
+	db: postgresAdapter({
+    pool: {
+      connectionString: process.env.POSTGRES_URI,
+    },
   }),
 
   sharp,
@@ -41,7 +47,7 @@ export default buildConfig({
 	plugins: [
     s3Storage({
       collections: {
-        [Media.slug]: true,
+        Media,
       },
       bucket: process.env.S3_BUCKET,
       config: {
