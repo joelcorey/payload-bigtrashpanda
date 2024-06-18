@@ -32,15 +32,15 @@ export default buildConfig({
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),
   },
-  // db: mongooseAdapter({
-  //   url: process.env.MONGODB_URI || '',
-  // }),
-
-	db: postgresAdapter({
-    pool: {
-      connectionString: process.env.POSTGRES_URI,
-    },
+  db: mongooseAdapter({
+    url: process.env.MONGODB_URI || '',
   }),
+
+	// db: postgresAdapter({
+  //   pool: {
+  //     connectionString: process.env.POSTGRES_URI,
+  //   },
+  // }),
 
   sharp,
 
