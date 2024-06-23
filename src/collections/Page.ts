@@ -3,7 +3,7 @@ import type { CollectionConfig } from 'payload/types';
 import meta, { Type as MetaType } from '../fields/meta';
 import slug from '../fields/slug';
 
-import HeroBentoPrimary, { Type as HeroBentoPrimaryType } from '@/blocks/HeroBentoPrimary';
+import HeroFlexBento, { Type as HeroBentoPrimaryType } from '@/blocks/HeroFlexBento';
 import Content,          { Type as ContentType } from '@/blocks/Content';
 import Spacer,           { Type as SpacerType } from '@/blocks/Spacer';
 
@@ -46,7 +46,7 @@ const Page: CollectionConfig = {
 			type: 'blocks',
 			minRows: 1,
 			blocks: [
-				HeroBentoPrimary,
+				HeroFlexBento,
 				Content,
 				Spacer
 			]

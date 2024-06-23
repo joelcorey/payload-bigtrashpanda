@@ -5,6 +5,9 @@ import slug from '../fields/slug'
 
 const Color: CollectionConfig = {
 	slug: 'colors',
+	access: {
+		read: () => true
+	},
   fields: [
     {
       name: 'title',
@@ -18,7 +21,7 @@ const Color: CollectionConfig = {
 			type: 'text',
 			required: true,
 		},
-    // slug
+    slug
   ],
 	admin: {
 		useAsTitle: 'title'
