@@ -13,12 +13,16 @@ const Color: CollectionConfig = {
       required: true,
     },
 		{
-			name: 'color',
+			name: 'hexColorValue',
+			label: 'Hex Color Value',
 			type: 'text',
 			required: true,
 		},
-    slug
+    // slug
   ],
+	admin: {
+		useAsTitle: 'title'
+	}
 }
 
 export default Color

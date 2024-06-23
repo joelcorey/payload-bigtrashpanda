@@ -3,6 +3,7 @@ import { Block } from 'payload/types';
 import icon from '@/fields/icon';
 
 import { Type as MediaType } from '../collections/Media';
+import { Background } from '@/components/Background';
 
 export type Type = {
   blockType: 'heroBentoPrimary'
@@ -10,7 +11,7 @@ export type Type = {
   heading: string
   subHeading: string
   backgroundImage: MediaType
-
+	backgroundCOlor: string
 }
 
 const HeroBentoPrimary: Block = {
@@ -143,7 +144,7 @@ const HeroBentoPrimary: Block = {
 			name: 'buttonLinks',
 			label: 'Button Links',
 			type: 'array',
-			minRows: 2,
+			minRows: 1,
 			maxRows: 4,
 			labels: {
 				singular: 'Button',
@@ -170,6 +171,12 @@ const HeroBentoPrimary: Block = {
 					name: 'HrefTitle',
 					label: 'Href Title',
 					type: 'text'
+				},
+				{
+					name: 'backgroundColor',
+					label: 'Background Color',
+					type: 'relationship',
+          relationTo: 'colors',
 				}
 			]
 		}
