@@ -21,9 +21,80 @@ const HeroBentoPrimary: Block = {
 	},
 	fields: [
 		{
-			name: 'heading',
-			label: 'Heading',
-			type: 'text'
+			name: 'h1Heading',
+			label: 'H1 Heading',
+			type: 'array',
+			minRows: 1,
+			maxRows: 5,
+			fields: [
+				{
+					name: 'text',
+					type: 'text',
+					label: 'Text'
+				},
+				{
+					name: 'size',
+					label: 'Size',
+					type: 'select',
+					options: [
+						{
+							label: 'large',
+							value: 'lg'
+						},
+						{
+							label: 'Extra Large',
+							value: 'xl'
+						},
+						{
+							label: '2 Extra Large',
+							value: '2xl'
+						},
+						{
+							label: '3 Extra Large',
+							value: '3xl'
+						},
+						{
+							label: '4 Extra Large',
+							value: '4xl'
+						},
+						{
+							label: '5 Extra Large',
+							value: '5xl'
+						},
+					]
+				},
+				{
+					name: 'paddyingY',
+					label: 'Padding Y',
+					type: 'select',
+					options: [
+						{
+							label: '1',
+							value: '1'
+						},
+						{
+							label: '2',
+							value: '2'
+						},
+						{
+							label: '3',
+							value: '3'
+						},
+						{
+							label: '4',
+							value: '4'
+						},
+						{
+							label: '5',
+							value: '5'
+						},
+						{
+							label: '6',
+							value: '6'
+						},
+					]
+				}
+			]
 		},
 		{
 			name: 'subHeading',
