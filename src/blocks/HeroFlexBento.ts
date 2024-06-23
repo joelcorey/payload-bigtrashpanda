@@ -168,7 +168,7 @@ const HeroBentoPrimary: Block = {
 					type: 'text'
 				},
 				{
-					name: 'HrefTitle',
+					name: 'hrefTitle',
 					label: 'Href Title',
 					type: 'text'
 				},
