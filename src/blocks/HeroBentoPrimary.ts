@@ -14,10 +14,10 @@ export type Type = {
 }
 
 const HeroBentoPrimary: Block = {
-	slug: 'heroBentoPrimary',
+	slug: 'heroFlexBento',
 	labels: {
-		singular: 'Hero Bento Primary Block',
-		plural: 'Hero Bento Primary Blocks'
+		singular: 'Hero Flex Bento Block',
+		plural: 'Hero Flex Bento Blocks'
 	},
 	fields: [
 		{
