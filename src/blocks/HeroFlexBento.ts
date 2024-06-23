@@ -152,24 +152,19 @@ const HeroBentoPrimary: Block = {
 			},
 			fields: [
 				{
-					name: 'title',
-					label: 'Title',
-					type: 'text',
-				},
-				icon,
-				{
 					name: 'header',
 					label: 'Header',
 					type: 'text'
 				},
+				icon,
+				{
+					name: 'title',
+					label: 'Title',
+					type: 'text',
+				},
 				{
 					name: 'href',
 					label: 'Href',
-					type: 'text'
-				},
-				{
-					name: 'hrefTitle',
-					label: 'Href Title',
 					type: 'text'
 				},
 				{
