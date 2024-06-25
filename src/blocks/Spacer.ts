@@ -1,5 +1,7 @@
 import { Block } from 'payload/types';
 
+import icon from '@/fields/icon';
+
 export type Type = {
   size: 'small' | 'medium' | 'large'
 }
@@ -11,6 +13,12 @@ const Spacer: Block = {
     plural: 'Spacers',
   },
   fields: [
+		{
+			name: 'text',
+			label: 'Text',
+			type: 'text'
+		},
+		icon,
     {
       name: 'size',
       label: 'Size',

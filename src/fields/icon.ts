@@ -18,10 +18,13 @@ const icon: Field = {
 			value: 'arrowUpperRight'
 		},
 		{
+			label: 'Arrow down',
+			value: 'arrowDown'
+		},
+		{
 			label: 'Phone outline',
 			value: 'phoneOutline'
-		},
-		
+		}
 	]
 }
 
