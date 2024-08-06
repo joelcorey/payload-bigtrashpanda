@@ -1,17 +1,16 @@
-import { postgresAdapter } from '@payloadcms/db-postgres'
 import { mongooseAdapter } from '@payloadcms/db-mongodb'
 import { s3Storage } from '@payloadcms/storage-s3'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import path from 'path'
 import sharp from 'sharp'
-import { buildConfig } from 'payload/config'
+import { buildConfig } from 'payload'
 import { fileURLToPath } from 'url'
 
-import { Users } from './collections/Users'
-import { Media } from './collections/Media'
-import Page from './collections/Page';
-import Category from './collections/Category';
-import Color from './collections/Color'
+import { Users } from './src/collections/Users'
+import { Media } from './src/collections/Media'
+import Page from './src/collections/Page'
+import Category from './src/collections/Category'
+import Color from './src/collections/Color'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -20,13 +19,7 @@ export default buildConfig({
   admin: {
     user: Users.slug,
   },
-  collections: [
-		Users, 
-		Media,
-		Page,
-		Category,
-		Color,
-	],
+  collections: [Users, Media, Page, Category, Color],
   editor: lexicalEditor({}),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
@@ -36,7 +29,7 @@ export default buildConfig({
     url: process.env.MONGODB_URI || '',
   }),
 
-	// db: postgresAdapter({
+  // db: postgresAdapter({
   //   pool: {
   //     connectionString: process.env.POSTGRES_URI,
   //   },
@@ -44,20 +37,20 @@ export default buildConfig({
 
   sharp,
 
-	plugins: [
+  plugins: [
     s3Storage({
       collections: {
-        Media,
+        media: true,
       },
-      bucket: process.env.S3_BUCKET,
+      bucket: process.env.S3_BUCKET ?? '',
       config: {
-				forcePathStyle: true,
+        forcePathStyle: true,
         credentials: {
-          accessKeyId: process.env.S3_ACCESS_KEY_ID,
-          secretAccessKey: process.env.S3_SECRET_ACCESS_KEY,
+          accessKeyId: process.env.S3_ACCESS_KEY_ID ?? '',
+          secretAccessKey: process.env.S3_SECRET_ACCESS_KEY ?? '',
         },
         region: process.env.S3_REGION,
-        endpoint: process.env.S3_ENDPOINT
+        endpoint: process.env.S3_ENDPOINT,
       },
     }),
   ],

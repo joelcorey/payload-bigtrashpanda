@@ -1,17 +1,17 @@
-import { CollectionConfig } from 'payload/types'
+import { CollectionConfig } from 'payload'
 
 import slug from '../fields/slug'
 
 const Category: CollectionConfig = {
-	slug: 'categories',
+  slug: 'categories',
   fields: [
     {
       name: 'title',
-			label: 'Title',
+      label: 'Title',
       type: 'text',
       required: true,
     },
-    slug
+    slug,
   ],
 }
 

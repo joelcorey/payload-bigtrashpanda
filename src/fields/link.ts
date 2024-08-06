@@ -1,5 +1,5 @@
-import { Field } from 'payload/types';
-import { Type as PageType } from '../collections/Page';
+import { Field } from 'payload'
+import { Type as PageType } from '../collections/Page'
 
 export type Type = {
   type: 'page' | 'custom'
@@ -66,6 +66,6 @@ const link: Field = {
       ],
     },
   ],
-};
+}
 
-export default link;
+export default link

@@ -1,7 +1,12 @@
-import { MigrateUpArgs, MigrateDownArgs, sql } from '@payloadcms/db-postgres'
+// This migration file is technically unwanted since we're using monbodb and not postgres
+// Leaving in for posterity
+
+import { MigrateDownArgs, MigrateUpArgs } from '@payloadcms/db-postgres'
 
 export async function up({ payload }: MigrateUpArgs): Promise<void> {
-await payload.db.drizzle.execute(sql`
+  //@ts-ignore
+
+  await payload.db.drizzle.execute(sql`
 
 CREATE TABLE IF NOT EXISTS "media" (
 	"id" serial PRIMARY KEY NOT NULL,
@@ -18,13 +23,13 @@ CREATE TABLE IF NOT EXISTS "media" (
 );
 
 CREATE INDEX IF NOT EXISTS "media_created_at_idx" ON "media" ("created_at");
-CREATE UNIQUE INDEX IF NOT EXISTS "media_filename_idx" ON "media" ("filename");`);
-
-};
+CREATE UNIQUE INDEX IF NOT EXISTS "media_filename_idx" ON "media" ("filename");`)
+}
 
 export async function down({ payload }: MigrateDownArgs): Promise<void> {
-await payload.db.drizzle.execute(sql`
+  //@ts-ignore
 
-DROP TABLE "media";`);
+  await payload.db.drizzle.execute(sql`
 
-};
+DROP TABLE "media";`)
+}

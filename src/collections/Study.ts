@@ -1,63 +1,63 @@
-import { CollectionConfig } from 'payload/types'
+import { CollectionConfig } from 'payload'
 
 import slug from '../fields/slug'
 import meta from '../fields/meta'
 
 const Study: CollectionConfig = {
-	slug: 'studies',
+  slug: 'studies',
   fields: [
     {
       name: 'title',
-			label: 'Title',
+      label: 'Title',
       type: 'text',
       required: true,
     },
-		{
-			name: 'featuredImage',
-			label: 'Featured Image',
-			type: 'upload',
-			relationTo: 'media'
-		},
-		{
+    {
+      name: 'featuredImage',
+      label: 'Featured Image',
+      type: 'upload',
+      relationTo: 'media',
+    },
+    {
       name: 'description',
-			label: 'Description',
+      label: 'Description',
       type: 'textarea',
     },
-		{
-			name: 'client',
-			label: 'Client',
-			type: 'text',
-			admin: {
-				position: 'sidebar'
-			}
-		},
-		{
-			name: 'location',
-			// label: 'Location',
-			type: 'group',
-			admin: {
-				position: 'sidebar'
-			},
-			fields: [
-				{
-					name: 'location',
-					label: 'Location',
-					type: 'text',
-				},
-			]
-		},
-		{
-			name: 'categories',
-			label: 'Categories',
-			type: 'relationship',
-			relationTo: 'categories',
-			hasMany: true,
-			admin: {
-				position: 'sidebar'
-			}
-		},
-		slug,
-		meta
+    {
+      name: 'client',
+      label: 'Client',
+      type: 'text',
+      admin: {
+        position: 'sidebar',
+      },
+    },
+    {
+      name: 'location',
+      // label: 'Location',
+      type: 'group',
+      admin: {
+        position: 'sidebar',
+      },
+      fields: [
+        {
+          name: 'location',
+          label: 'Location',
+          type: 'text',
+        },
+      ],
+    },
+    {
+      name: 'categories',
+      label: 'Categories',
+      type: 'relationship',
+      relationTo: 'categories',
+      hasMany: true,
+      admin: {
+        position: 'sidebar',
+      },
+    },
+    slug,
+    meta,
   ],
 }
 

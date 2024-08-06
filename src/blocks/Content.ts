@@ -1,8 +1,8 @@
-import { Block } from 'payload/types';
+import { Block } from 'payload'
 
-export type ColumnWidth = 'oneThird' | 'half' | 'twoThirds' | 'full';
+export type ColumnWidth = 'oneThird' | 'half' | 'twoThirds' | 'full'
 
-export type Alignment = 'left' | 'center' | 'right';
+export type Alignment = 'left' | 'center' | 'right'
 
 export type AccentLineAlignment = 'left' | 'right'
 
@@ -25,85 +25,83 @@ export type Type = {
 }
 
 const Content: Block = {
-	slug: 'content',
-	labels: {
-		singular: 'Content Block',
-		plural: 'Content Blocks'
-	},
-	fields: [
-		{
-			name: 'columns',
-			label: 'Columns',
-			type: 'array',
-			minRows: 1,
-			fields: [
-				{
-					type: 'row',
-					fields: [
-						{
-							name: 'width',
-							label: 'Column Width',
-							type: 'select',
-							defaultValue: 'full',
-							required: true,
-							options: [
-								{
-									label: 'One Third',
-									value: 'oneThird'
-								},
-								{
-									label: 'Half',
-									value: 'half'
-								},
-								{
-									label: 'Two Thirds',
-									value: 'twoThirds'
-								},
-								{
-									label: 'Full',
-									value: 'full'
-								},
-							],
-							admin: {
-								width: '50%'
-							}
-						},
-						{
-							name: 'alignment',
-							label: 'Alignment',
-							type: 'select',
-							defaultValue: 'left',
-							required: true,
-							options: [
-								{
-									label: 'Left',
-									value: 'left'
-								},
-								{
-									label: 'Center',
-									value: 'center'
-								},
-								{
-									label: 'Right',
-									value: 'right'
-								},
-							],
-							admin: {
-								width: '50%'
-							}
-						},
-					]
-				},
-				{
-					name: 'content',
-					type: 'richText',
-					required: true,
-
-				},
-				
-			]
-		},
-		{
+  slug: 'content',
+  labels: {
+    singular: 'Content Block',
+    plural: 'Content Blocks',
+  },
+  fields: [
+    {
+      name: 'columns',
+      label: 'Columns',
+      type: 'array',
+      minRows: 1,
+      fields: [
+        {
+          type: 'row',
+          fields: [
+            {
+              name: 'width',
+              label: 'Column Width',
+              type: 'select',
+              defaultValue: 'full',
+              required: true,
+              options: [
+                {
+                  label: 'One Third',
+                  value: 'oneThird',
+                },
+                {
+                  label: 'Half',
+                  value: 'half',
+                },
+                {
+                  label: 'Two Thirds',
+                  value: 'twoThirds',
+                },
+                {
+                  label: 'Full',
+                  value: 'full',
+                },
+              ],
+              admin: {
+                width: '50%',
+              },
+            },
+            {
+              name: 'alignment',
+              label: 'Alignment',
+              type: 'select',
+              defaultValue: 'left',
+              required: true,
+              options: [
+                {
+                  label: 'Left',
+                  value: 'left',
+                },
+                {
+                  label: 'Center',
+                  value: 'center',
+                },
+                {
+                  label: 'Right',
+                  value: 'right',
+                },
+              ],
+              admin: {
+                width: '50%',
+              },
+            },
+          ],
+        },
+        {
+          name: 'content',
+          type: 'richText',
+          required: true,
+        },
+      ],
+    },
+    {
       type: 'row',
       fields: [
         {
@@ -162,7 +160,7 @@ const Content: Block = {
         },
       ],
     },
-	]
+  ],
 }
 
-export default Content;
+export default Content

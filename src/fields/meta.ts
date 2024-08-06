@@ -1,4 +1,4 @@
-import { Field } from 'payload/types'
+import { Field } from 'payload'
 
 export type Type = {
   meta?: {
@@ -9,26 +9,26 @@ export type Type = {
 }
 
 const meta: Field = {
-	name: 'meta',
-	label: 'Page Meta',
-	type: 'group',
-	fields: [
-		{
-			name: 'title',
-			label: 'Title',
-			type: 'text'
-		},
-		{
-			name: 'description',
-			label: 'Description',
-			type: 'text'
-		},
-		{
-			name: 'keywords',
-			label: 'Keywords',
-			type: 'text'
-		},
-	]
+  name: 'meta',
+  label: 'Page Meta',
+  type: 'group',
+  fields: [
+    {
+      name: 'title',
+      label: 'Title',
+      type: 'text',
+    },
+    {
+      name: 'description',
+      label: 'Description',
+      type: 'text',
+    },
+    {
+      name: 'keywords',
+      label: 'Keywords',
+      type: 'text',
+    },
+  ],
 }
 
 export default meta

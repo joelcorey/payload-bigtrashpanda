@@ -1,5 +1,5 @@
-import { GlobalConfig } from 'payload/types';
-import link from '../fields/link';
+import { GlobalConfig } from 'payload'
+import link from '../fields/link'
 
 const MegaMenu: GlobalConfig = {
   slug: 'mega-menu',
@@ -13,11 +13,9 @@ const MegaMenu: GlobalConfig = {
         singular: 'Link',
         plural: 'Links',
       },
-      fields: [
-        link,
-      ],
+      fields: [link],
     },
   ],
-};
+}
 
-export default MegaMenu;
+export default MegaMenu

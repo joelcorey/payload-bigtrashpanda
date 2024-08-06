@@ -1,7 +1,12 @@
+// This migration file is technically unwanted since we're using monbodb and not postgres
+// Leaving in for posterity
+
 import { MigrateUpArgs, MigrateDownArgs, sql } from '@payloadcms/db-postgres'
 
 export async function up({ payload }: MigrateUpArgs): Promise<void> {
-await payload.db.drizzle.execute(sql`
+  //@ts-ignore
+
+  await payload.db.drizzle.execute(sql`
 
 CREATE TABLE IF NOT EXISTS "users" (
 	"id" serial PRIMARY KEY NOT NULL,
@@ -59,16 +64,16 @@ DO $$ BEGIN
 EXCEPTION
  WHEN duplicate_object THEN null;
 END $$;
-`);
-
-};
+`)
+}
 
 export async function down({ payload }: MigrateDownArgs): Promise<void> {
-await payload.db.drizzle.execute(sql`
+  //@ts-ignore
+
+  await payload.db.drizzle.execute(sql`
 
 DROP TABLE "users";
 DROP TABLE "payload_preferences";
 DROP TABLE "payload_preferences_rels";
-DROP TABLE "payload_migrations";`);
-
-};
+DROP TABLE "payload_migrations";`)
+}

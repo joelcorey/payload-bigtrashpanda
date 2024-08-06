@@ -1,31 +1,29 @@
-import { CollectionConfig } from 'payload/types'
-import { text } from 'payload/fields/validations'
-
+import { CollectionConfig } from 'payload'
 import slug from '../fields/slug'
 
 const Color: CollectionConfig = {
-	slug: 'colors',
-	access: {
-		read: () => true
-	},
+  slug: 'colors',
+  access: {
+    read: () => true,
+  },
   fields: [
     {
       name: 'title',
-			label: 'Title',
+      label: 'Title',
       type: 'text',
       required: true,
     },
-		{
-			name: 'hexColorValue',
-			label: 'Hex Color Value',
-			type: 'text',
-			required: true,
-		},
-    slug
+    {
+      name: 'hexColorValue',
+      label: 'Hex Color Value',
+      type: 'text',
+      required: true,
+    },
+    slug,
   ],
-	admin: {
-		useAsTitle: 'title'
-	}
+  admin: {
+    useAsTitle: 'title',
+  },
 }
 
 export default Color
