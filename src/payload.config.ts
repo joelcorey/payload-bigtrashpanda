@@ -1,6 +1,6 @@
-import { postgresAdapter } from '@payloadcms/db-postgres'
+// import { postgresAdapter } from '@payloadcms/db-postgres'
 import { mongooseAdapter } from '@payloadcms/db-mongodb'
-import { s3Storage } from '@payloadcms/storage-s3'
+// import { s3Storage } from '@payloadcms/storage-s3'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import path from 'path'
 import sharp from 'sharp'
@@ -44,21 +44,21 @@ export default buildConfig({
 
   sharp,
 
-	plugins: [
-    s3Storage({
-      collections: {
-        Media,
-      },
-      bucket: process.env.S3_BUCKET,
-      config: {
-				forcePathStyle: true,
-        credentials: {
-          accessKeyId: process.env.S3_ACCESS_KEY_ID,
-          secretAccessKey: process.env.S3_SECRET_ACCESS_KEY,
-        },
-        region: process.env.S3_REGION,
-        endpoint: process.env.S3_ENDPOINT
-      },
-    }),
-  ],
+	// plugins: [
+  //   s3Storage({
+  //     collections: {
+  //       Media,
+  //     },
+  //     bucket: process.env.S3_BUCKET,
+  //     config: {
+	// 			forcePathStyle: true,
+  //       credentials: {
+  //         accessKeyId: process.env.S3_ACCESS_KEY_ID,
+  //         secretAccessKey: process.env.S3_SECRET_ACCESS_KEY,
+  //       },
+  //       region: process.env.S3_REGION,
+  //       endpoint: process.env.S3_ENDPOINT
+  //     },
+  //   }),
+  // ],
 })
