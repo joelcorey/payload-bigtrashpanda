@@ -3,6 +3,7 @@ import { Block } from 'payload/types';
 import icon from '@/fields/icon';
 // @ts-ignore
 import { Type as MediaType } from '../collections/Media';
+
 import { Background } from '@/components/Background';
 
 export type Type = {
