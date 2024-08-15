@@ -17,25 +17,6 @@ import Color from './collections/Color'
 //https://github.com/payloadcms/payload/tree/beta/packages/storage-s3
 import { s3Storage } from '@payloadcms/storage-s3'
 
-// The old way
-// import { cloudStorage } from '@payloadcms/plugin-cloud-storage'
-// import { s3Adapter } from '@payloadcms/plugin-cloud-storage/s3'
-// const adapter = s3Adapter({
-//   config: {
-// 		endpoint: process.env.S3_ENDPOINT,
-//     credentials: {
-// 			//@ts-ignore
-//       accessKeyId: process.env.S3_ACCESS_KEY_ID,
-// 			//@ts-ignore
-//       secretAccessKey: process.env.S3_SECRET_ACCESS_KEY,
-//     },
-//     region: process.env.S3_REGION,
-//     // ... Other S3 configuration
-//   },
-// 	//@ts-ignore
-//   bucket: process.env.S3_BUCKET,
-// })
-
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
@@ -82,15 +63,5 @@ export default buildConfig({
       },
     }),
   ],
-
-	// plugins: [
-	// 	cloudStorage({
-	// 		collections: {
-	// 			'media': {
-	// 				adapter
-	// 			},
-	// 		},
-	// 	}),
-	// ]
 
 })
