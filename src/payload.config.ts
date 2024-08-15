@@ -65,7 +65,7 @@ export default buildConfig({
 	  //@ts-ignore
     s3Storage({
       collections: {
-				media: true
+				['media']: true
       },
 			//@ts-ignore
       bucket: process.env.S3_BUCKET,
@@ -75,10 +75,10 @@ export default buildConfig({
           accessKeyId: process.env.S3_ACCESS_KEY_ID,
 					//@ts-ignore
           secretAccessKey: process.env.S3_SECRET_ACCESS_KEY,
-					endpoint: process.env.S3_ENDPOINT,
-					region: process.env.S3_REGION,
         },
-        // ... Other S3 configuration
+				endpoint: process.env.S3_ENDPOINT,
+				region: process.env.S3_REGION,
+        forcePathStyle: true
       },
     }),
   ],
