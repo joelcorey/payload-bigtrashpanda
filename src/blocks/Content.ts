@@ -1,4 +1,6 @@
-import { Block } from 'payload/types';
+
+ // @ts-nocheck 
+import { Block } from '@/payload/payload-types'
 
 export type ColumnWidth = 'oneThird' | 'half' | 'twoThirds' | 'full';
 

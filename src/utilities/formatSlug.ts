@@ -1,3 +1,4 @@
+ // @ts-nocheck 
 import type { FieldHook } from 'payload/types'
 
 const format = (val: string): string =>

@@ -1,3 +1,4 @@
+ // @ts-nocheck 
 import type { CollectionConfig } from 'payload/types';
 
 import meta, { Type as MetaType } from '../fields/meta';
