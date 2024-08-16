@@ -1,4 +1,3 @@
- // @ts-nocheck 
 import { CollectionConfig } from 'payload/types'
 
 import slug from '../fields/slug'
