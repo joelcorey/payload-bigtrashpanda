@@ -1,5 +1,4 @@
 import { CollectionConfig } from 'payload/types'
-import { text } from 'payload/fields/validations'
 
 import slug from '../fields/slug'
 

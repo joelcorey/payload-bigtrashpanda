@@ -1,3 +1,4 @@
+ // @ts-nocheck 
 import path from 'path'
 import { 
 	lexicalEditor 
@@ -21,9 +22,9 @@ const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
 export default buildConfig({
-  admin: {
-    user: Users.slug,
-  },
+  // admin: {
+  //   user: Users.slug,
+  // },
   collections: [
 		Users, 
 		Media,
@@ -33,9 +34,9 @@ export default buildConfig({
 	],
   editor: lexicalEditor({}),
   secret: process.env.PAYLOAD_SECRET || '',
-  typescript: {
-    outputFile: path.resolve(dirname, 'payload-types.ts'),
-  },
+  // typescript: {
+  //   outputFile: path.resolve(dirname, 'payload-types.ts'),
+  // },
   db: mongooseAdapter({
     url: process.env.MONGODB_URI || '',
   }),
