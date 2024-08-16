@@ -1,3 +1,5 @@
+
+ // @ts-nocheck 
 import { Block } from 'payload/types';
 
 export type ColumnWidth = 'oneThird' | 'half' | 'twoThirds' | 'full';

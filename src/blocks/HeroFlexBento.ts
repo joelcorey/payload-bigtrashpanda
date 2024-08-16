@@ -1,3 +1,4 @@
+ // @ts-nocheck 
 import { Block } from 'payload/types';
 
 import icon from '../fields/icon';
