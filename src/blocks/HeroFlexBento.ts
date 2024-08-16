@@ -1,5 +1,5 @@
  // @ts-nocheck 
-import { Block } from '@/payload-types';
+import { Block } from '@/payload/payload-types'
 
 import icon from '../fields/icon';
  //@ts-ignore
