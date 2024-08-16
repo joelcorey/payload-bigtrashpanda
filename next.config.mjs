@@ -5,7 +5,10 @@ const nextConfig = {
   // Your Next.js config here
   experimental: {
     reactCompiler: false
-  }
+  },
+	eslint: {
+    ignoreDuringBuilds: true,
+	},
 }
 
 export default withPayload(nextConfig)
