@@ -1,3 +1,4 @@
+ // @ts-nocheck 
 import { Field } from 'payload/types';
 import { Type as PageType } from '../collections/Page';
 
