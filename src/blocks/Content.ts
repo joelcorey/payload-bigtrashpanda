@@ -1,5 +1,3 @@
-import { Block } from 'payload/types';
-
 export type ColumnWidth = 'oneThird' | 'half' | 'twoThirds' | 'full';
 
 export type Alignment = 'left' | 'center' | 'right';
@@ -7,6 +5,8 @@ export type Alignment = 'left' | 'center' | 'right';
 export type AccentLineAlignment = 'left' | 'right'
 
 export type PaddingSize = 'none' | 'small' | 'medium' | 'large'
+
+export type Block = any
 
 export type Column = {
   content: unknown
