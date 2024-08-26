@@ -2,7 +2,6 @@ import { Block } from 'payload';
 
 import icon from '@/fields/icon';
 
-import { Type as MediaType } from '../collections/Media';
 import { Background } from '@/components/Background';
 
 export type Type = {
