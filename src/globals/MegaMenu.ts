@@ -1,4 +1,4 @@
-import { GlobalConfig } from 'payload/types';
+import { GlobalConfig } from 'payload';
 import link from '../fields/link';
 
 const MegaMenu: GlobalConfig = {
