@@ -1,4 +1,4 @@
-import { CollectionConfig } from 'payload/types'
+import { CollectionConfig } from 'payload'
 
 import slug from '../fields/slug'
 import meta from '../fields/meta'
