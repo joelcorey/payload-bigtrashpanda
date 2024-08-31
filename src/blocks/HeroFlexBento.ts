@@ -4,14 +4,14 @@ import icon from '@/fields/icon';
 
 import { Background } from '@/components/Background';
 
-export type Type = {
-  blockType: 'heroBentoPrimary'
-  blockName?: string
-  heading: string
-  subHeading: string
-  backgroundImage: MediaType
-	backgroundCOlor: string
-}
+// export type Type = {
+//   blockType: 'heroBentoPrimary'
+//   blockName?: string
+//   heading: string
+//   subHeading: string
+//   backgroundImage: MediaType
+// 	backgroundCOlor: string
+// }
 
 const HeroBentoPrimary: Block = {
 	slug: 'heroFlexBento',
