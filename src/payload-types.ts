@@ -16,6 +16,7 @@ export interface Config {
     pages: Page;
     categories: Category;
     colors: Color;
+    navbar: Navbar;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
   };
@@ -193,6 +194,38 @@ export interface Category {
   id: string;
   title: string;
   slug?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "navbar".
+ */
+export interface Navbar {
+  id: string;
+  title: string;
+  navItems?:
+    | {
+        icon?:
+          | (
+              | 'AlignRight'
+              | 'BaggageClaim'
+              | 'AtSign'
+              | 'MessageSquare'
+              | 'MessageCircleHeart'
+              | 'MapPin'
+              | 'Smile'
+              | 'Sticker'
+              | 'Milestone'
+            )
+          | null;
+        title?: string | null;
+        description?: string | null;
+        href?: string | null;
+        hrefTitle?: string | null;
+        id?: string | null;
+      }[]
+    | null;
   updatedAt: string;
   createdAt: string;
 }

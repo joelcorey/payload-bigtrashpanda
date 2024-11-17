@@ -4,6 +4,10 @@ import slug from '../fields/slug'
 
 const Navbar: CollectionConfig = {
 	slug: 'navbar',
+	labels: {
+		singular: 'Navbar',
+		plural: 'Navbar'
+	},
   fields: [
     {
       name: 'title',
@@ -12,12 +16,12 @@ const Navbar: CollectionConfig = {
       required: true,
     },
 		{
-			name: 'Links',
-			label: 'Image Slider',
+			name: 'navItems',
+			label: 'Nav Items',
 			type: 'array',
 			labels: {
-				singular: 'Slide',
-				plural: 'Slides'
+				singular: 'Navbar Item',
+				plural: 'Navbar Items'
 			},
 			fields: [
 				{
@@ -87,7 +91,6 @@ const Navbar: CollectionConfig = {
 				}
 			]
 		},
-    slug
   ],
 }
 
