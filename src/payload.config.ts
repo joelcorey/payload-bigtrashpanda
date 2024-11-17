@@ -12,6 +12,7 @@ import { Media } from './collections/Media'
 import Page from './collections/Page';
 import Category from './collections/Category';
 import Color from './collections/Color'
+import Navbar from './collections/Navbar'
 
 // The new way of doing it that does not work??
 //https://github.com/payloadcms/payload/tree/beta/packages/storage-s3
@@ -30,6 +31,7 @@ export default buildConfig({
 		Page,
 		Category,
 		Color,
+		Navbar,
 	],
   editor: lexicalEditor({}),
   secret: process.env.PAYLOAD_SECRET || '',
