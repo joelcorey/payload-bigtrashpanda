@@ -1,6 +1,5 @@
 import { CollectionConfig } from 'payload'
 
-import slug from '../fields/slug'
 import icon from '@/fields/icon'
 
 const Navbar: CollectionConfig = {
@@ -8,6 +7,9 @@ const Navbar: CollectionConfig = {
 	labels: {
 		singular: 'Navbar',
 		plural: 'Navbar'
+	},
+	access: {
+		read: () => true
 	},
   fields: [
     {
