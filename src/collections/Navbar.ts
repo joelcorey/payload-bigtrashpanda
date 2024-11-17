@@ -1,6 +1,7 @@
 import { CollectionConfig } from 'payload'
 
 import slug from '../fields/slug'
+import icon from '@/fields/icon'
 
 const Navbar: CollectionConfig = {
 	slug: 'navbar',
@@ -24,53 +25,7 @@ const Navbar: CollectionConfig = {
 				plural: 'Navbar Items'
 			},
 			fields: [
-				{
-					name: 'icon', // required
-					type: 'select', // required
-					hasMany: false,
-					admin: {
-						isClearable: true,
-						isSortable: true, // use mouse to drag and drop different values, and sort them according to your choice
-					},
-					options: [
-						{
-							label: 'Align Right',
-							value: 'AlignRight',
-						},
-						{
-							label: 'Baggage Claim',
-							value: 'BaggageClaim',
-						},
-						{
-							label: 'At Sign',
-							value: 'AtSign',
-						},
-						{
-							label: 'Message Square',
-							value: 'MessageSquare',
-						},
-						{
-							label: 'Message Circle Heart',
-							value: 'MessageCircleHeart',
-						},
-						{
-							label: 'Map Pin',
-							value: 'MapPin',
-						},
-						{
-							label: 'Smile',
-							value: 'Smile',
-						},
-						{
-							label: 'Sticker',
-							value: 'Sticker',
-						},
-						{
-							label: 'Milestone',
-							value: 'Milestone',
-						},
-					],
-				},
+				icon,
 				{
 					name: 'title',
 					type: 'text',

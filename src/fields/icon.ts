@@ -9,23 +9,51 @@ export type Type = {
 }
 
 const icon: Field = {
-	name: 'icon',
-	label: 'Icon',
-	type: 'select',
+	name: 'icon', // required
+	type: 'select', // required
+	hasMany: false,
+	admin: {
+		isClearable: true,
+		isSortable: true, // use mouse to drag and drop different values, and sort them according to your choice
+	},
 	options: [
 		{
-			label: 'Arrow upper right',
-			value: 'arrowUpperRight'
+			label: 'Align Right',
+			value: 'AlignRight',
 		},
 		{
-			label: 'Arrow down',
-			value: 'arrowDown'
+			label: 'Baggage Claim',
+			value: 'BaggageClaim',
 		},
 		{
-			label: 'Phone outline',
-			value: 'phoneOutline'
-		}
-	]
+			label: 'At Sign',
+			value: 'AtSign',
+		},
+		{
+			label: 'Message Square',
+			value: 'MessageSquare',
+		},
+		{
+			label: 'Message Circle Heart',
+			value: 'MessageCircleHeart',
+		},
+		{
+			label: 'Map Pin',
+			value: 'MapPin',
+		},
+		{
+			label: 'Smile',
+			value: 'Smile',
+		},
+		{
+			label: 'Sticker',
+			value: 'Sticker',
+		},
+		{
+			label: 'Milestone',
+			value: 'Milestone',
+		},
+	],
 }
 
 export default icon

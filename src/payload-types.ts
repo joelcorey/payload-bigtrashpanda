@@ -115,7 +115,19 @@ export interface Page {
             buttonLinks?:
               | {
                   header?: string | null;
-                  icon?: ('arrowUpperRight' | 'arrowDown' | 'phoneOutline') | null;
+                  icon?:
+                    | (
+                        | 'AlignRight'
+                        | 'BaggageClaim'
+                        | 'AtSign'
+                        | 'MessageSquare'
+                        | 'MessageCircleHeart'
+                        | 'MapPin'
+                        | 'Smile'
+                        | 'Sticker'
+                        | 'Milestone'
+                      )
+                    | null;
                   title?: string | null;
                   href?: string | null;
                   backgroundColor?: (string | null) | Color;
@@ -157,7 +169,19 @@ export interface Page {
           }
         | {
             text?: string | null;
-            icon?: ('arrowUpperRight' | 'arrowDown' | 'phoneOutline') | null;
+            icon?:
+              | (
+                  | 'AlignRight'
+                  | 'BaggageClaim'
+                  | 'AtSign'
+                  | 'MessageSquare'
+                  | 'MessageCircleHeart'
+                  | 'MapPin'
+                  | 'Smile'
+                  | 'Sticker'
+                  | 'Milestone'
+                )
+              | null;
             size: 'small' | 'medium' | 'large';
             id?: string | null;
             blockName?: string | null;
