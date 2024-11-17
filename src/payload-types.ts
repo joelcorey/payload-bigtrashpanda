@@ -244,9 +244,9 @@ export interface Navbar {
             )
           | null;
         title?: string | null;
-        description?: string | null;
         href?: string | null;
         hrefTitle?: string | null;
+        description?: string | null;
         id?: string | null;
       }[]
     | null;

@@ -28,11 +28,8 @@ const Navbar: CollectionConfig = {
 				icon,
 				{
 					name: 'title',
+					label: 'Title',
 					type: 'text',
-				},
-				{
-					name: 'description',
-					type: 'text'
 				},
 				{
 					name: 'href',
@@ -43,7 +40,12 @@ const Navbar: CollectionConfig = {
 					name: 'hrefTitle',
 					label: 'Href Title',
 					type: 'text'
-				}
+				},
+				{
+					name: 'description',
+					label: 'Description',
+					type: 'text'
+				},
 			]
 		},
   ],
