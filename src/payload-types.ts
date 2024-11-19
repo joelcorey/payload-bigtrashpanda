@@ -126,6 +126,8 @@ export interface Page {
                         | 'Smile'
                         | 'Sticker'
                         | 'Milestone'
+                        | 'MoveUpRight'
+                        | 'Phone'
                       )
                     | null;
                   title?: string | null;
@@ -180,6 +182,8 @@ export interface Page {
                   | 'Smile'
                   | 'Sticker'
                   | 'Milestone'
+                  | 'MoveUpRight'
+                  | 'Phone'
                 )
               | null;
             size: 'small' | 'medium' | 'large';
@@ -241,6 +245,8 @@ export interface Navbar {
               | 'Smile'
               | 'Sticker'
               | 'Milestone'
+              | 'MoveUpRight'
+              | 'Phone'
             )
           | null;
         title?: string | null;

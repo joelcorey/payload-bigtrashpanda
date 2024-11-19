@@ -53,6 +53,14 @@ const icon: Field = {
 			label: 'Milestone',
 			value: 'Milestone',
 		},
+		{
+			label: 'Arrow Upper Right',
+			value: 'MoveUpRight'
+		},
+		{
+			label: 'phone',
+			value: 'Phone'
+		}
 	],
 }
 
