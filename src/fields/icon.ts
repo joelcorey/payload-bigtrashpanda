@@ -58,6 +58,10 @@ const icon: Field = {
 			value: 'MoveUpRight'
 		},
 		{
+			label: 'Arrow Down',
+			value: 'CornerRightDown'
+		},
+		{
 			label: 'phone',
 			value: 'Phone'
 		}

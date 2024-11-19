@@ -127,6 +127,7 @@ export interface Page {
                         | 'Sticker'
                         | 'Milestone'
                         | 'MoveUpRight'
+                        | 'CornerRightDown'
                         | 'Phone'
                       )
                     | null;
@@ -183,6 +184,7 @@ export interface Page {
                   | 'Sticker'
                   | 'Milestone'
                   | 'MoveUpRight'
+                  | 'CornerRightDown'
                   | 'Phone'
                 )
               | null;
@@ -246,6 +248,7 @@ export interface Navbar {
               | 'Sticker'
               | 'Milestone'
               | 'MoveUpRight'
+              | 'CornerRightDown'
               | 'Phone'
             )
           | null;
