@@ -12,6 +12,9 @@ const meta: Field = {
 	name: 'meta',
 	label: 'Page Meta',
 	type: 'group',
+	admin: {
+		position: 'sidebar',
+	},
 	fields: [
 		{
 			name: 'title',

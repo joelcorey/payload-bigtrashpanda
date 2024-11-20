@@ -39,6 +39,12 @@ const ReviewGrid: Block = {
 					label: 'Name',
 					type: 'text',
 				},
+				// {
+				// 	name: 'backgroundColor',
+				// 	label: 'Backbround Color',
+				// 	type: 'relationship',
+				// 	relationTo: ['Color']
+				// }
 			]
 		},
 	]

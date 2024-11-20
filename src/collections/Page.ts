@@ -39,8 +39,8 @@ const Page: CollectionConfig = {
 				ReviewGrid
 			]
 		},
+		slug,
 		meta,
-		slug
   ],
   
 };

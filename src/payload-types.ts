@@ -208,12 +208,12 @@ export interface Page {
           }
       )[]
     | null;
+  slug?: string | null;
   meta?: {
     title?: string | null;
     description?: string | null;
     keywords?: string | null;
   };
-  slug?: string | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -223,9 +223,11 @@ export interface Page {
  */
 export interface Color {
   id: string;
-  title: string;
-  hexColorValue: string;
-  slug?: string | null;
+  name?: string | null;
+  html?: string | null;
+  rgba?: string | null;
+  cmyk?: string | null;
+  preferredColorCode?: ('html' | 'rgba' | 'cmyk') | null;
   updatedAt: string;
   createdAt: string;
 }
