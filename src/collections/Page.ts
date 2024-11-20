@@ -6,6 +6,7 @@ import slug from '../fields/slug';
 import HeroFlexBento from '@/blocks/HeroFlexBento';
 import Content from '@/blocks/Content';
 import Spacer from '@/blocks/Spacer';
+import ReviewGrid from '@/blocks/ReviewGrid'
 
 const Page: CollectionConfig = {
   slug: 'pages',
@@ -34,7 +35,8 @@ const Page: CollectionConfig = {
 			blocks: [
 				HeroFlexBento,
 				Content,
-				Spacer
+				Spacer,
+				ReviewGrid
 			]
 		},
 		meta,
