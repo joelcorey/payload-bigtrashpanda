@@ -1,6 +1,7 @@
 import { Block } from 'payload';
 
 import icon from '@/fields/icon';
+import { number } from 'payload/shared';
 
 export type Type = {
   size: 'small' | 'medium' | 'large'
@@ -14,8 +15,8 @@ const ReviewGrid: Block = {
   },
   fields: [
 		{
-			name: 'review',
-			label: 'Review',
+			name: 'reviews',
+			label: 'Reviews',
 			type: 'array',
 			minRows: 1,
 			maxRows: 10,
@@ -39,14 +40,20 @@ const ReviewGrid: Block = {
 					label: 'Name',
 					type: 'text',
 				},
-				// {
-				// 	name: 'backgroundColor',
-				// 	label: 'Backbround Color',
-				// 	type: 'relationship',
-				// 	relationTo: ['Color']
-				// }
 			]
 		},
+		{
+			name: 'reviewsToShow',
+			label: 'Reviews to Show',
+			type: 'number',
+			defaultValue: 5
+		}
+		// {
+		// 	name: 'backgroundColor',
+		// 	label: 'Backbround Color',
+		// 	type: 'relationship',
+		// 	relationTo: 'Color'
+		// }
 	]
 };
 

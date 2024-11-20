@@ -194,7 +194,7 @@ export interface Page {
             blockType: 'spacer';
           }
         | {
-            review?:
+            reviews?:
               | {
                   stars?: number | null;
                   reviewText?: string | null;
@@ -202,6 +202,7 @@ export interface Page {
                   id?: string | null;
                 }[]
               | null;
+            reviewsToShow?: number | null;
             id?: string | null;
             blockName?: string | null;
             blockType: 'reviewGrid';
