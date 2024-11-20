@@ -32,4 +32,4 @@ const ReviewGrid: Block = {
   ],
 };
 
-export default Spacer;
+export default ReviewGrid;

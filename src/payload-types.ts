@@ -193,6 +193,14 @@ export interface Page {
             blockName?: string | null;
             blockType: 'spacer';
           }
+        | {
+            stars?: number | null;
+            review?: string | null;
+            name?: string | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'reviewGrid';
+          }
       )[]
     | null;
   meta?: {
