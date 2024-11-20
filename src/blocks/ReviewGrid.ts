@@ -14,22 +14,34 @@ const ReviewGrid: Block = {
   },
   fields: [
 		{
-			name: 'stars',
-			label: 'Stars',
-			type: 'number',
-			max: 5
-		},
-		{
 			name: 'review',
 			label: 'Review',
-			type: 'text',
+			type: 'array',
+			minRows: 1,
+			maxRows: 10,
+			labels: {
+				singular: 'Review',
+				plural: 'Reviews'
+			},
+			fields: [
+				{
+					name: 'stars',
+					type: 'number',
+					max: 5
+				},
+				{
+					name: 'reviewText',
+					label: 'Review Text',
+					type: 'text'
+				},
+				{
+					name: 'name',
+					label: 'Name',
+					type: 'text',
+				},
+			]
 		},
-		{
-			name: 'name',
-			label: 'Name',
-			type: 'text',
-		},
-  ],
+	]
 };
 
 export default ReviewGrid;
