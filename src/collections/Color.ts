@@ -1,4 +1,5 @@
 import { CollectionConfig } from 'payload'
+import { getSiblingData } from 'payload/shared'
 // import { text } from 'payload/fields/validations'
 
 export type Type = {
@@ -43,7 +44,6 @@ const Color: CollectionConfig = {
 			name: 'preferredColorCode',
 			label: 'Preferred Color Code',
 			type: 'select',
-			defaultValue: 'HTML',
 			options: [
 				{
           label: 'HTML',

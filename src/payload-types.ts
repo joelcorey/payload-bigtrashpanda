@@ -196,6 +196,8 @@ export interface Page {
         | {
             reviews?:
               | {
+                  cols?: ('1' | '2' | '3' | '4') | null;
+                  type?: ('review' | 'callToActionLink') | null;
                   stars?: number | null;
                   reviewText?: string | null;
                   name?: string | null;

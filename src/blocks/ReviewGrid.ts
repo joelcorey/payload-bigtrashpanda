@@ -26,8 +26,51 @@ const ReviewGrid: Block = {
 			},
 			fields: [
 				{
+					name: 'cols', 
+					label: 'Columns to span',
+					type: 'select',
+					defaultValue: '1',
+					options: [
+						{
+							label: '1',
+							value: '1',
+						},
+						{
+							label: '2',
+							value: '2',
+						},
+						{
+							label: '3',
+							value: '3',
+						},
+						{
+							label: '4',
+							value: '4',
+						},
+						
+					],
+				},
+				{
+					name: 'type', 
+					label: 'Type',
+					type: 'select',
+					defaultValue: 'review',
+					options: [
+						{
+							label: 'Review',
+							value: 'review',
+						},
+						{
+							label: 'Call to Action Link',
+							value: 'callToActionLink',
+						},
+						
+					],
+				},
+				{
 					name: 'stars',
 					type: 'number',
+					defaultValue: 5,
 					max: 5
 				},
 				{
