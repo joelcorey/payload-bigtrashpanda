@@ -83,6 +83,22 @@ const ReviewGrid: Block = {
 					label: 'Name',
 					type: 'text',
 				},
+				{
+					name: 'title',
+					label: 'Title',
+					type: 'text',
+				},
+				{
+					name: 'url',
+					label: 'Url',
+					type: 'text',
+				},
+				{
+					name: 'urlTitle',
+					label: 'Url Title',
+					type: 'text',
+				},
+				icon,
 			]
 		},
 		{

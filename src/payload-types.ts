@@ -201,6 +201,25 @@ export interface Page {
                   stars?: number | null;
                   reviewText?: string | null;
                   name?: string | null;
+                  title?: string | null;
+                  url?: string | null;
+                  urlTitle?: string | null;
+                  icon?:
+                    | (
+                        | 'AlignRight'
+                        | 'BaggageClaim'
+                        | 'AtSign'
+                        | 'MessageSquare'
+                        | 'MessageCircleHeart'
+                        | 'MapPin'
+                        | 'Smile'
+                        | 'Sticker'
+                        | 'Milestone'
+                        | 'MoveUpRight'
+                        | 'CornerRightDown'
+                        | 'Phone'
+                      )
+                    | null;
                   id?: string | null;
                 }[]
               | null;
